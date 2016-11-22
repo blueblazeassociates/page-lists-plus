@@ -1,18 +1,18 @@
 {
-  "name" : "blueblazeassociates/page-lists-plus",
+  "name"        : "blueblazeassociates/page-lists-plus",
   "description" : "Adds customisation options to the wp_list_pages function which is used to create Page menus. Change the link text and title attributes, redirect, nofollow or unlink links, and remove links from page lists altogether, all through the WordPress dashboard.",
-  "type" : "wordpress-plugin",
-  "homepage" : "http://www.technokinetics.com/plugins/page-lists-plus/",
-  "license" : "GPL-2.0+",
+  "type"        : "wordpress-plugin",
+  "homepage"    : "http://www.technokinetics.com/plugins/page-lists-plus/",
+  "license"     : "GPL-2.0+",
   "authors" : [{
-    "name" : "Tim Holt",
-    "homepage" : "http://www.technokinetics.com/",
-    "role" : "Author/Creator"
-  }, {
-    "name" : "Ed Gifford",
-    "homepage" : "http://www.blueblazeassociates.com",
-    "role" : "Composer-fier",
-    "email" : "egifford@blueblazeassociates.com"
+      "name"     : "Tim Holt",
+      "homepage" : "http://www.technokinetics.com/",
+      "role"     : "Author/Creator"
+    }, {
+      "name"     : "Ed Gifford",
+      "homepage" : "http://www.blueblazeassociates.com",
+      "role"     : "Composer-fier and Developer",
+      "email"    : "egifford@blueblazeassociates.com"
     }
   ],
   "keywords" : [
@@ -27,7 +27,13 @@
     "title attribute",
     "wp_list_pages"
   ],
-  "replace": {
+  "replace" : {
     "wpackagist-plugin/page-lists-plus" : "1.1.8"
+  },
+  "require" : {
+    "php" : ">=5.6.26" 
+  },
+  "config" : {
+    "php" : "5.6.*"
   }
 }
