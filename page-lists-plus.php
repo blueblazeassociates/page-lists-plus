@@ -560,7 +560,7 @@ function page_lists_plus($output) {
 }
 
 function qTrans_compatibility($post_title) {
-    if (function_exists(qtrans_split)) {
+    if (function_exists('qtrans_split')) {
         $post_title = qtrans_split($post_title); //explode the string in a array $_array_[lang_code]=content
         $post_title = $post_title[qtrans_getLanguage()];   //get the content from array with actual language
     }
